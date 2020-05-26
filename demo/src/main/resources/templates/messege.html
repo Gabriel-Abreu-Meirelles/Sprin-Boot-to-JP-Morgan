@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+
+	<head>
+	
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+		<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+	    <title>Sua mensagem</title>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    
+	</head>
+	
+	<body>
+	
+		<h1 style="font-size:40px">Sua Mensagem</h1>
+		<p style="font-size:20px" th:text="'de: ' + ${form.name}"/>
+		<h3 th:text="''+ ${form.content}" style="font-size:50px" />
+		<a href="/form"class="waves-effect waves-light btn-large"><i class="material-icons left">edit</i>deixe outra mensagem</a>
+		
+		
+		<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+	</body>
+	
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+	<head>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+	    <title>frist try on Spring Boot</title>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	</head>
+	<body>
+		   <h1 style="font-size:40px">deixe uma mensagem</h1>
+		<form action="#" th:action="@{/form}" th:object="${form}" method= "post">
+			
+			Mensagem: <input type="text" th:field="*{content}"/><br><br>
+			de: <input type="text" th:field="*{name}"/><br>
+			<button class="btn waves-effect waves-light" type="submit" name="action">Salvar
+			<i class="material-icons right">send</i>
+			</button>
+			<button class="btn waves-effect waves-light" type="reset" name="actiion">resetar
+			<i class="material-icons right">loop</i>
+			</button>
+		</form>
+		
+		<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+	</body>
+<html/>
